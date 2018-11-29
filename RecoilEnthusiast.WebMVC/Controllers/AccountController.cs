@@ -8,6 +8,7 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using RecoilEnthusiast.Data;
 using RecoilEnthusiast.WebMVC.Models;
 
 namespace RecoilEnthusiast.WebMVC.Controllers
