@@ -16,7 +16,7 @@ namespace RecoilEnthusiast.Data
         [Required]
         public string PayMethod { get; set; }
         [Required]
-        public bool PayReceived { get; set; }
+        public decimal PayAmmount { get; set; }
         [Required]
         public DateTime TransactionDate { get; set; }
     }

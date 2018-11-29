@@ -54,11 +54,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerCreate.cs" />
+    <Compile Include="CustomerList.cs" />
+    <Compile Include="ProductCreate.cs" />
+    <Compile Include="ProductList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransactionList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RecoilEnthusiast.Data\RecoilEnthusiast.Data.csproj">
+      <Project>{8CAD0BB1-3CFA-4C27-8E30-07F9F241EF59}</Project>
+      <Name>RecoilEnthusiast.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

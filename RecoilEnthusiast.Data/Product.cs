@@ -7,14 +7,13 @@ using System.Threading.Tasks;
 
 namespace RecoilEnthusiast.Data
 {
-    public enum ItemType { Firearm = 1, Knives, Ammo, Clothing, Target }
+    public enum ItemType { [Display(Name ="Firearms")]Firearm = 1, [Display(Name = "Knives")]Knives, [Display(Name = "Ammunition")] Ammo, [Display(Name = "Clothing")] Clothing, [Display(Name = "Items")]Item }
     public class Product
     {
         [Key]
         public int ProductId { get; set; }
         [Required]
         public ItemType TypeOfItem { get; set; }
-        [Required]
         public Guid OwnerId { get; set; }
         [Required]
         public string Name { get; set; }
