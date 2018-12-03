@@ -8,12 +8,11 @@ using System.Threading.Tasks;
 
 namespace RecoilEnthusiast.Models
 {
-    //public enum ItemType {[Display(Name = "Firearms")] Firearm = 1, [Display(Name = "Knives")] Knives, [Display(Name = "Ammunition")] Ammo, [Display(Name = "Clothing")] Clothing, [Display(Name = "Items")] Item }
-    public class ProductList
+    public class ProductDetail
     {
-        [Display(Name="Item ID")]
+        [Display(Name = "Item ID")]
         public int ProductId { get; set; }
-        [Display(Name="Category")]
+        [Display(Name = "Category")]
         public ItemType TypeOfItem { get; set; }
         [Display(Name = "Item Name")]
         public string Name { get; set; }
@@ -24,6 +23,6 @@ namespace RecoilEnthusiast.Models
         [Display(Name = "Notes")]
         public string Notes { get; set; }
 
-        public override string ToString() => Name;
+        public override string ToString() => $"[{ProductId}] {Name}";
     }
 }

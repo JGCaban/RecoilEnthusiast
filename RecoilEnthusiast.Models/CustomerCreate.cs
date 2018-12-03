@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RecoilEnthusiast.Models
 {
-    class CustomerCreate
+    public class CustomerCreate
     {
         [Required]
         [MinLength(2, ErrorMessage = "Please enter at least 2 characters.")]
@@ -23,9 +23,6 @@ namespace RecoilEnthusiast.Models
         [Required]
         public bool HasFelony { get; set; }
 
-        public override string ToString()
-        {
-            return base.ToString();
-        }
+        public override string ToString() => FirstName;
     }
 }

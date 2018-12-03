@@ -18,7 +18,14 @@ namespace RecoilEnthusiast.Models
         [MinLength(3, ErrorMessage = "Please enter at least 3 characters.")]
         [MaxLength(50, ErrorMessage = "There are too many characters in this field.")]
         public string Name { get; set; }
-
+        [Required]
+        [MinLength(3, ErrorMessage = "Please enter at least 3 characters.")]
+        [MaxLength(20, ErrorMessage = "There are too many characters in this field.")]
+        public string Model { get; set; }
+        [Required]
+        [MinLength(3, ErrorMessage = "Please enter at least 3 characters.")]
+        [MaxLength(20, ErrorMessage = "There are too many characters in this field.")]
+        public string Serial { get; set; }
         [MaxLength(5000)]
         public string Notes { get; set; }
 

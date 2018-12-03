@@ -18,9 +18,6 @@ namespace RecoilEnthusiast.Models
         [Display(Name="Date of Birth")]
         public DateTime DateOfBirth { get; set; }
 
-        public override string ToString()
-        {
-            return base.ToString();
-        }
+        public override string ToString() => FirstName;
     }
 }
