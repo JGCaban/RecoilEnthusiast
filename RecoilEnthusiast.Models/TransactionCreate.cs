@@ -1,23 +1,22 @@
-﻿using System;
+﻿using RecoilEnthusiast.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecoilEnthusiast.Data
+namespace RecoilEnthusiast.Models
 {
-    public enum LoadoutDesig { [Display(Name="Longarm")]Longarm=1, [Display(Name="Sidearm")]Sidearm, [Display(Name="Accessory")]Accessory, [Display(Name="Item")]Item }
-    public class Transaction
+    public class TransactionCreate
     {
-        [Key]
-        public int TransactionID { get; set; }
-        public Guid OwnerId { get; set; }
         [Required]
         public LoadoutDesig Designation { get; set; }
         [Required]
         public string IssuerName { get; set; }
         [Required]
         public DateTime TransactionDate { get; set; }
+
+        public override string ToString() => IssuerName;
     }
 }

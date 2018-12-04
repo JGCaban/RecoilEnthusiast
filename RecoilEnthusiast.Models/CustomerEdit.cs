@@ -7,18 +7,16 @@ using System.Threading.Tasks;
 
 namespace RecoilEnthusiast.Models
 {
-    public class CustomerList
+    public class CustomerEdit
     {
-        [Display(Name="Customer ID")]
         public int CustomerId { get; set; }
-        [Display(Name="First Name")]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
-        [Display(Name="Last Name")]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
-        [Display(Name="Date of Birth")]
+        [Display(Name = "Date of Birth")]
         public DateTime DateOfBirth { get; set; }
-        [Display(Name= "Has Felony/Domestic battery")]
+        [Display(Name = "Felony or Domestic battery?")]
         public bool HasFelony { get; set; }
-        public override string ToString() => FirstName;
     }
 }

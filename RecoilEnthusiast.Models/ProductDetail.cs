@@ -22,7 +22,6 @@ namespace RecoilEnthusiast.Models
         public string Serial { get; set; }
         [Display(Name = "Notes")]
         public string Notes { get; set; }
-
         public override string ToString() => $"[{ProductId}] {Name}";
     }
 }

@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace RecoilEnthusiast.WebMVC.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         // GET: Product
