@@ -13,8 +13,10 @@ namespace RecoilEnthusiast.Models
         [Required]
         public LoadoutDesig Designation { get; set; }
         [Required]
+        [Display(Name = "Name of Issuer: ")]
         public string IssuerName { get; set; }
         [Required]
+        [Display(Name = "Transaction Date: ")]
         public DateTime TransactionDate { get; set; }
 
         public override string ToString() => IssuerName;

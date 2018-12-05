@@ -8,15 +8,13 @@ using System.Threading.Tasks;
 
 namespace RecoilEnthusiast.Models
 {
-    public class TransactionList
+    public class TransactionEdit
     {
         public int TransactionId { get; set; }
         public LoadoutDesig Designation { get; set; }
-        [Display(Name = "Name of Issuer: ")]
+        [Display(Name="Name of Issuer: ")]
         public string IssuerName { get; set; }
         [Display(Name = "Transaction Date: ")]
         public DateTime TransactionDate { get; set; }
-
-        public override string ToString() => IssuerName;
     }
 }

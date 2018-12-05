@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 
 namespace RecoilEnthusiast.Models
 {
-    public class TransactionList
+    public class TransactionDetail
     {
+        [Display(Name = "Transaction ID")]
         public int TransactionId { get; set; }
         public LoadoutDesig Designation { get; set; }
         [Display(Name = "Name of Issuer: ")]
         public string IssuerName { get; set; }
         [Display(Name = "Transaction Date: ")]
         public DateTime TransactionDate { get; set; }
-
-        public override string ToString() => IssuerName;
+        public override string ToString() => $"[{TransactionId}] {IssuerName}";
     }
 }
