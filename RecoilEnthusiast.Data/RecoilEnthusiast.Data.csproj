@@ -67,6 +67,10 @@
     <Compile Include="Migrations\201812041908310_update.Designer.cs">
       <DependentUpon>201812041908310_update.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812051919288_added dropdownlist.cs" />
+    <Compile Include="Migrations\201812051919288_added dropdownlist.Designer.cs">
+      <DependentUpon>201812051919288_added dropdownlist.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="IdentityModels.cs" />
@@ -86,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812041908310_update.resx">
       <DependentUpon>201812041908310_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812051919288_added dropdownlist.resx">
+      <DependentUpon>201812051919288_added dropdownlist.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

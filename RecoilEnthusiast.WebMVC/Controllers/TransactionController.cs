@@ -25,6 +25,11 @@ namespace RecoilEnthusiast.WebMVC.Controllers
         //GET: Create
         public ActionResult Create()
         {
+            var customerService = CreateCustomerService();
+            var productService = CreateProductService();
+            ViewBag.CustomerId = new SelectList(customerService.GetCustomers(), "CustomerId", "LastName");
+            ViewBag.ProductId = new SelectList(productService.GetProducts(), "ProductId", "Name");
+            //ViewBag.ProductId = new SelectList(productService.GetProducts(), "ProductId", "Serial");
             return View();
         }
 
@@ -35,6 +40,15 @@ namespace RecoilEnthusiast.WebMVC.Controllers
             if (!ModelState.IsValid) return View(transaction);
 
             var service = CreateTransactionService();
+            var customerService = CreateCustomerService();
+            var productService = CreateProductService();
+
+            customerService.GetCustomerById(transaction.CustomerId);
+            productService.GetProductById(transaction.ProductId);
+
+            ViewBag.CustomerId = new SelectList(customerService.GetCustomers(), "CustomerId", "LastName", transaction.CustomerId);
+            ViewBag.ProductId = new SelectList(productService.GetProducts(), "ProductId", "Name", transaction.ProductId);
+            //ViewBag.ProductId = new SelectList(productService.GetProducts(), "ProductId", "Serial", transaction.ProductId);
 
             if (service.CreateTransaction(transaction))
             {
@@ -117,6 +131,20 @@ namespace RecoilEnthusiast.WebMVC.Controllers
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
             var service = new TransactionService(userId);
+            return service;
+        }
+
+        private CustomerService CreateCustomerService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new CustomerService(userId);
+            return service;
+        }
+
+        private ProductService CreateProductService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new ProductService(userId);
             return service;
         }
     }

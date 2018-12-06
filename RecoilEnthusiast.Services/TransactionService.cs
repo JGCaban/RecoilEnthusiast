@@ -24,6 +24,8 @@ namespace RecoilEnthusiast.Services
                 {
                     OwnerId = _userId,
                     Designation = transaction.Designation,
+                    CustomerID = transaction.CustomerId,
+                    ProductID = transaction.ProductId,
                     IssuerName = transaction.IssuerName,
                     TransactionDate = transaction.TransactionDate
                 };
@@ -79,7 +81,12 @@ namespace RecoilEnthusiast.Services
                             new TransactionList
                             {
                                 TransactionId = e.TransactionID,
+                                CustomerId = e.CustomerID,
+                                ProductId = e.ProductID,
                                 Designation = e.Designation,
+                                LastName = e.Customer.LastName,
+                                Name = e.Product.Name,
+                                Serial = e.Product.Serial,
                                 IssuerName = e.IssuerName,
                                 TransactionDate = e.TransactionDate
                             }
@@ -101,6 +108,9 @@ namespace RecoilEnthusiast.Services
                     {
                         TransactionId = entity.TransactionID,
                         Designation = entity.Designation,
+                        LastName = entity.Customer.LastName,
+                        Name = entity.Product.Name,
+                        Serial = entity.Product.Serial,
                         IssuerName = entity.IssuerName,
                         TransactionDate = entity.TransactionDate
                     };

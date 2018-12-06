@@ -13,6 +13,12 @@ namespace RecoilEnthusiast.Models
         [Required]
         public LoadoutDesig Designation { get; set; }
         [Required]
+        [Display(Name = "Last name of recepient: ")]
+        public int CustomerId { get; set; }
+        [Required]
+        [Display(Name = "Weapon/Item being issued: ")]
+        public int ProductId { get; set; }
+        [Required]
         [Display(Name = "Name of Issuer: ")]
         public string IssuerName { get; set; }
         [Required]

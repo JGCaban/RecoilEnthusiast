@@ -12,6 +12,8 @@ namespace RecoilEnthusiast.Data
     {
         [Key]
         public int TransactionID { get; set; }
+        public int CustomerID { get; set; }
+        public int ProductID { get; set; }
         public Guid OwnerId { get; set; }
         [Required]
         public LoadoutDesig Designation { get; set; }
@@ -19,5 +21,8 @@ namespace RecoilEnthusiast.Data
         public string IssuerName { get; set; }
         [Required]
         public DateTime TransactionDate { get; set; }
+
+        public virtual Customer Customer { get; set; }
+        public virtual Product Product { get; set; }
     }
 }

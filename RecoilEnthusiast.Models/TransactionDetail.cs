@@ -17,6 +17,13 @@ namespace RecoilEnthusiast.Models
         public string IssuerName { get; set; }
         [Display(Name = "Transaction Date: ")]
         public DateTime TransactionDate { get; set; }
+
+        //From CUSTOMER
+        public string LastName { get; set; }
+        //From PRODUCT
+        public string Name { get; set; }
+        public string Serial { get; set; }
+
         public override string ToString() => $"[{TransactionId}] {IssuerName}";
     }
 }
