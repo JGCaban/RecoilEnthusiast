@@ -46,6 +46,8 @@ namespace RecoilEnthusiast.Services
                         .Single(e => e.TransactionID == transaction.TransactionId && e.OwnerId == _userId);
 
                 entity.Designation = transaction.Designation;
+                entity.CustomerID = transaction.CustomerId;
+                entity.ProductID = transaction.ProductId;
                 entity.IssuerName = transaction.IssuerName;
                 entity.TransactionDate = transaction.TransactionDate;
 

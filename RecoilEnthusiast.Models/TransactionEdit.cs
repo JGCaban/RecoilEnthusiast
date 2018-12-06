@@ -12,6 +12,10 @@ namespace RecoilEnthusiast.Models
     {
         public int TransactionId { get; set; }
         public LoadoutDesig Designation { get; set; }
+        [Display(Name = "Last name of recepient: ")]
+        public int CustomerId { get; set; }
+        [Display(Name = "Weapon/Item being issued: ")]
+        public int ProductId { get; set; }
         [Display(Name="Name of Issuer: ")]
         public string IssuerName { get; set; }
         [Display(Name = "Transaction Date: ")]

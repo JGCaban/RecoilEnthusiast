@@ -13,15 +13,18 @@ namespace RecoilEnthusiast.Models
         [Display(Name = "Transaction ID")]
         public int TransactionId { get; set; }
         public LoadoutDesig Designation { get; set; }
-        [Display(Name = "Name of Issuer: ")]
+        [Display(Name = "Issuer: ")]
         public string IssuerName { get; set; }
         [Display(Name = "Transaction Date: ")]
         public DateTime TransactionDate { get; set; }
 
         //From CUSTOMER
+        [Display(Name = "Receiver's Last Name: ")]
         public string LastName { get; set; }
         //From PRODUCT
+        [Display(Name = "Weapon/Item: ")]
         public string Name { get; set; }
+        [Display(Name = "Serial: ")]
         public string Serial { get; set; }
 
         public override string ToString() => $"[{TransactionId}] {IssuerName}";

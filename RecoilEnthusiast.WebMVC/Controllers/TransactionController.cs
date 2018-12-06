@@ -29,7 +29,6 @@ namespace RecoilEnthusiast.WebMVC.Controllers
             var productService = CreateProductService();
             ViewBag.CustomerId = new SelectList(customerService.GetCustomers(), "CustomerId", "LastName");
             ViewBag.ProductId = new SelectList(productService.GetProducts(), "ProductId", "Name");
-            //ViewBag.ProductId = new SelectList(productService.GetProducts(), "ProductId", "Serial");
             return View();
         }
 
@@ -48,7 +47,6 @@ namespace RecoilEnthusiast.WebMVC.Controllers
 
             ViewBag.CustomerId = new SelectList(customerService.GetCustomers(), "CustomerId", "LastName", transaction.CustomerId);
             ViewBag.ProductId = new SelectList(productService.GetProducts(), "ProductId", "Name", transaction.ProductId);
-            //ViewBag.ProductId = new SelectList(productService.GetProducts(), "ProductId", "Serial", transaction.ProductId);
 
             if (service.CreateTransaction(transaction))
             {
