@@ -16,6 +16,7 @@ namespace RecoilEnthusiast.Models
         public int ProductId { get; set; }
         public LoadoutDesig Designation { get; set; }
         [Display(Name = "Issuer: ")]
+        
         public string IssuerName { get; set; }
         [Display(Name = "Transaction Date: ")]
         public DateTime TransactionDate { get; set; }

@@ -12,14 +12,21 @@
 
 @if (TempData.ContainsKey("SaveResult"))
 {
-<div class="alert alert-success fade in" role="alert">
+    <div class="alert alert-success fade in" role="alert">
 
-    <button type="button" class="close" data-dismiss="alert">
-        <span>&times;</span>
-    </button>
-    @TempData["SaveResult"]
-</div>
+        <button type="button" class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+        @TempData["SaveResult"]
+    </div>
 }
+
+<style type="text/css">
+
+    .table th, .table td {
+        text-align: center;
+    }
+</style>
 
 <table class="table">
     <tr>
@@ -47,35 +54,36 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TransactionId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Designation)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LastName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Serial)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.IssuerName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TransactionDate)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.TransactionId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.TransactionId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.TransactionId })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransactionId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Designation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Serial)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IssuerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransactionDate)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.TransactionId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.TransactionId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.TransactionId })
+            </td>
+        </tr>
+    }
 
 </table>
