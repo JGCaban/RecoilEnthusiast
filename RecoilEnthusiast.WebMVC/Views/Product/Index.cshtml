@@ -7,8 +7,15 @@
 <h2>Products</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create", null, htmlAttributes: new { @class = "btn btn-primary" })
 </p>
+
+<style type="text/css">
+
+    .table th, .table td {
+        text-align: center;
+    }
+</style>
 
 @if (TempData.ContainsKey("SaveResult"))
 {
@@ -21,15 +28,8 @@
     </div>
 }
 
-<style type="text/css">
-
-    .table th, .table td {
-        text-align: center;
-    }
-</style>
-
-<table class="table">
-    <tr>
+<table class="table table-borderless myTable">
+    <tr class="thead">
         <th>
             @Html.DisplayNameFor(model => model.ProductId)
         </th>
@@ -61,11 +61,10 @@
                 @Html.DisplayFor(modelItem => item.Model)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.ProductId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.ProductId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.ProductId })
+                @Html.ActionLink("Edit", "Edit", new { id = item.ProductId }, htmlAttributes: new { @class = "btn btn-warning" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ProductId }, htmlAttributes: new { @class = "btn btn-info" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ProductId }, htmlAttributes: new { @class="btn btn-danger" })
             </td>
         </tr>
     }
-
 </table>

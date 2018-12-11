@@ -1,4 +1,7 @@
 ﻿body {
+    background-image: url('../Assets/Shotgun_Shells.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -22,3 +25,111 @@ select,
 textarea {
     max-width: 280px;
 }
+/*NAVBAR*/
+
+.navbar-inverse {
+    background-color: white;
+}
+
+.navbar-fixed-top {
+    top: -5px;
+    border-width: 2px 0px 0px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: crimson;
+}
+
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+    margin-right: 0px;
+    margin-left: -30px;
+}
+
+/*JUMBOTRON*/
+.jumbotron {
+    box-shadow: 0 30px 30px rgba(0,0,0,.5);
+    font-family: Amiri;
+    background-image: url('../Assets/full_loadout.jpg');
+    background-size: auto;
+    background-position: top;
+    color: white;
+    padding-bottom: 110px;
+}
+
+/* BOTTOM 3 BOXES BELOW JUMBOTRON ON MAIN INDEX*/
+#left {
+    box-shadow: 0 30px 30px rgba(0,0,0,.5);
+    margin-top: 50px;
+    background-color: tan;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    height: 196px;
+    width: 375px;
+    margin-bottom: 4em;
+    font-family: Amiri;
+}
+
+#middle {
+    box-shadow: 0 30px 30px rgba(0,0,0,.5);
+    margin-top: 50px;
+    background-color: tan;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    height: 196px;
+    width: 375px;
+    margin: 3.5em 4px 4em 4px;
+    font-family: Amiri;
+}
+
+#right {
+    box-shadow: 0 30px 30px rgba(0,0,0,.5);
+    margin-top: 50px;
+    background-color: tan;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    height: 196px;
+    width: 375px;
+    margin-bottom: 4em;
+    font-family: Amiri;
+}
+
+.btn-default {
+    box-shadow: 0 30px 30px rgba(0,0,0,.5);
+    background-color: #337ab7;
+    font-family: Amiri;
+    color: white;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: Amiri;
+    color: white;
+    text-align: center;
+}
+
+.p {
+    margin: -18px 10px 17px;
+}
+
+h2, .h2 {
+    font-size: 30px;
+    color: white;
+}
+/*TABLE STUFF*/
+.myTable {
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+}
+
+.thead {
+    color: crimson;
+
+}
+

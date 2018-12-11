@@ -7,9 +7,9 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Transaction Details</h4>
+    <h4 class="text-muted">Transaction Details</h4>
     <hr />
-    <dl class="dl-horizontal">
+    <dl class="dl-horizontal text-muted">
         <dt>
             @Html.DisplayNameFor(model => model.TransactionId)
         </dt>
@@ -69,6 +69,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.TransactionId }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TransactionId }, htmlAttributes: new { @class = "btn btn-warning" }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

@@ -188,6 +188,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\cloak.png" />
+    <Content Include="Assets\full_loadout.jpg" />
+    <Content Include="Assets\Gear_1.jpg" />
+    <Content Include="Assets\Gear_2.jpg" />
+    <Content Include="Assets\medium-cloak.png" />
+    <Content Include="Assets\Shotgun_Shells.jpg" />
+    <Content Include="Assets\tiny-cloak.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
