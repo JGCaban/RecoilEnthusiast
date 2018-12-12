@@ -133,3 +133,16 @@ h2, .h2 {
 
 }
 
+/*TEXT IN VIEWS*/
+#subtitle-text {
+    color: antiquewhite;
+    text-decoration: underline;
+}
+
+#view-text {
+    color: white;
+}
+
+#dropdown-text {
+    color: black;
+}

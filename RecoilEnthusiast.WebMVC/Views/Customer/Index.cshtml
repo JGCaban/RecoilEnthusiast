@@ -50,7 +50,7 @@
 
     @foreach (var item in Model)
     {
-        <tr>
+        <tr id="view-text">
             <td>
                 @Html.DisplayFor(modelItem => item.CustomerId)
             </td>
@@ -67,8 +67,8 @@
                 @Html.DisplayFor(modelItem => item.HasFelony)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.CustomerId }, htmlAttributes: new { @class = "btn btn-warning" }) |
-                @Html.ActionLink("Details", "Details", new { id=item.CustomerId }, htmlAttributes: new { @class = "btn btn-info" }) |
+                @Html.ActionLink("Edit", "Edit", new { id=item.CustomerId }, htmlAttributes: new { @class = "btn btn-warning" }) 
+                @Html.ActionLink("Details", "Details", new { id=item.CustomerId }, htmlAttributes: new { @class = "btn btn-info" }) 
                 @Html.ActionLink("Delete", "Delete", new { id=item.CustomerId }, htmlAttributes: new { @class = "btn btn-danger" })
             </td>
         </tr>
