@@ -3,28 +3,89 @@
 }
 
 <div class="jumbotron">
-    <h1>Recoil Enthusiast</h1>
-    <p class="lead">Recoil Enthusiast is a free web application for building team loadouts.</p>
+    <h1 id="view-text">Recoil Enthusiast</h1>
+    <p class="lead" id="view-text">Recoil Enthusiast is a free web application for building team loadouts for a hunting and/or training environment.</p>
 </div>
 
+    <!--begin Bootstrap Carousel-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5200">
+
+        <!-- Slide Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="~/Assets/gear_2.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h3>Weapons</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Assets/photo-1527409954955-62b3844082b3.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h3>Gear up</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Assets/M240.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h3>Shooter practice</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Assets/flashing_light.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a> 
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+        <!--end carousel-->
+    </div>
+
+    <!--latest jQuery 3-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap JS-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--THREE TEXT BOXES-->
 <div class="md-4-row">
     <div class="col-md-4" id="left">
-        <h2>Getting started</h2>
+        <h2 id="box-text">Weapons</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            Purchase weapons directly from the manufacturer. Colt's has a wide inventory of weapons including handguns, revolvers, and automatic rifles. 
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p><a class="btn btn-danger" href="https://www.colt.com/">Colt's &raquo;</a></p>
     </div>
     <div class="col-md-4" id="middle">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2 id="box-text">Hunting Accessories</h2>
+        <p>Purchase hunting and sporting gear at Cabela's. Enter code #CSS3SUCKS for a 20% discount.</p>
+        <p><a class="btn btn-danger" href="https://www.cabelas.com/category/Hunting/104791680.uts">Cabela's &raquo;</a></p>
     </div>
     <div class="col-md-4" id="right">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2 id="box-text">Shooting Range</h2>
+        <p>Schedule a visit to a Point Blank shooting range near you.</p>
+        <p><a class="btn btn-danger" href="https://shootpointblank.com/range-2/">Point Blank &raquo;</a></p>
     </div>
 </div>

@@ -50,19 +50,26 @@ textarea {
     box-shadow: 0 30px 30px rgba(0,0,0,.5);
     font-family: Amiri;
     background-image: url('../Assets/full_loadout.jpg');
-    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: top;
     color: white;
-    padding-bottom: 110px;
+    padding-bottom: 140px;
 }
 
 /* BOTTOM 3 BOXES BELOW JUMBOTRON ON MAIN INDEX*/
+#box-text {
+    color: firebrick;
+}
+
 #left {
     box-shadow: 0 30px 30px rgba(0,0,0,.5);
     margin-top: 50px;
     background-color: tan;
-    background-position: center;
-    background-size: cover;
+    background-image: url('../Assets/colt.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 30%;
     border-radius: 25px;
     height: 196px;
     width: 375px;
@@ -74,8 +81,10 @@ textarea {
     box-shadow: 0 30px 30px rgba(0,0,0,.5);
     margin-top: 50px;
     background-color: tan;
-    background-position: center;
-    background-size: cover;
+    background-image: url("../Assets/1200px-Cabela's_Logo.svg.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 50%;
     border-radius: 25px;
     height: 196px;
     width: 375px;
@@ -87,8 +96,10 @@ textarea {
     box-shadow: 0 30px 30px rgba(0,0,0,.5);
     margin-top: 50px;
     background-color: tan;
-    background-position: center;
-    background-size: cover;
+    background-image: url('../Assets/PointBlankRange-Logo_w-o-Tagline.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 50%;
     border-radius: 25px;
     height: 196px;
     width: 375px;
@@ -144,5 +155,18 @@ h2, .h2 {
 }
 
 #dropdown-text {
-    color: black;
+    color: black;    
+}
+
+/*CAROUSEL*/
+#myCarousel {
+    box-shadow: 0 30px 30px rgba(0,0,0,.5);
+    width: 800px;
+    margin-top: 75px;
+    margin-left: 180px;
+    margin-bottom: 15px;
+}
+
+.carousel-inner > .item > img {
+    height: 500px;
 }

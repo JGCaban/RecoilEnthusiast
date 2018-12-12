@@ -188,11 +188,18 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\1200px-Cabela%27s_Logo.svg.png" />
+    <Content Include="Assets\brief.jpg" />
     <Content Include="Assets\cloak.png" />
+    <Content Include="Assets\colt.png" />
+    <Content Include="Assets\flashing_light.jpg" />
     <Content Include="Assets\full_loadout.jpg" />
     <Content Include="Assets\Gear_1.jpg" />
     <Content Include="Assets\Gear_2.jpg" />
+    <Content Include="Assets\M240.jpg" />
     <Content Include="Assets\medium-cloak.png" />
+    <Content Include="Assets\photo-1527409954955-62b3844082b3.jpg" />
+    <Content Include="Assets\PointBlankRange-Logo_w-o-Tagline.png" />
     <Content Include="Assets\Shotgun_Shells.jpg" />
     <Content Include="Assets\tiny-cloak.png" />
     <Content Include="Content\bootstrap-theme.css" />
