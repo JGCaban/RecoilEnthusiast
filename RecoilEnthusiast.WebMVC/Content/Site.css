@@ -168,5 +168,6 @@ h2, .h2 {
 }
 
 .carousel-inner > .item > img {
+    width: 800px;
     height: 500px;
 }
