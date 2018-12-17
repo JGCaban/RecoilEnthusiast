@@ -6,24 +6,24 @@
     <title>@ViewBag.Title - Recoil Enthusiast</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    
+
 
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <img src="~/Assets/tiny-cloak.png" />
+                <a href="@Url.Action("Index", "Home")"><img src="~/Assets/tiny-cloak.png" /></a>
                 @*<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        @Html.ActionLink("Recoil Enthusiast", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Recoil Enthusiast", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    @*<li>@Html.ActionLink("Home", "Index", "Home")</li>*@
                     <li>@Html.ActionLink("Products", "Index", "Product")</li>
                     @if (User.Identity.IsAuthenticated)
                     {
